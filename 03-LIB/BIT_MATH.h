@@ -24,13 +24,13 @@
 #define IS_BIT_SET(reg, bit) ((reg >> bit) & 1)     // 1 --> true .. 0 --> false
 #define IS_BIT_CLR(reg, bit) !((reg >> bit) & 1)    // if clear --> true (1) ,... not clear --> false (0)                 
 #define ROR(reg, num) reg = ((reg >> num) | (reg << (REGISTER_SIZE - num)))
-#define ROL(reg, num) reg = ((reg << num) | (reg >> (REGISTER_SIZE - num)))
+#define ROL (reg, num) reg = ((reg << num) | (reg >> (REGISTER_SIZE - num)))
 
                             /*PORT*/
 							
 #define SET_PORT(reg) reg |= REG_RANGE(REGISTER_SIZE) 
 #define CLR_PORT(reg) reg &= (~(REG_RANGE(REGISTER_SIZE)))
-#define TOG_PORT(reg) reg ^= REG_RANGE(REGISTER_SIZE)      
+#define TOG_PORT(reg)  reg ^= REG_RANGE(REGISTER_SIZE)      
 #define GET_PORT(reg) (reg & (REG_RANGE(REGISTER_SIZE)))   // Another Solution --> reg |= 0 
 							
 
