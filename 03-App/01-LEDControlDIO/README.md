@@ -19,7 +19,7 @@ This project is for controlling an LED using AVR-GCC. It includes both debugging
 
 ### Setup
 1. **Clone the repository:**
-   
+   ```bash
    git clone https://github.com/Ziad-AhmedX/ATMega32_Drivers.git
 
 
