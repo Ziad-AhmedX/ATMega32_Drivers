@@ -1,0 +1,72 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+Main application file for controlling GPIO ports.  
+
+
+{\ttfamily \#include \char`\"{}STD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}BIT\+\_\+\+MATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DIO\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DIO\+\_\+config.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_adcb3134205a6d15c137ea7362ff49970}{custom\+\_\+delay\+\_\+ms}} (u32 counter)
+\begin{DoxyCompactList}\small\item\em Introduces a delay in milliseconds. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function to control GPIO ports. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main application file for controlling GPIO ports. 
+
+Initializes GPIO ports and toggles their states with a delay.
+
+\begin{DoxyAuthor}{Author}
+ZIAD AHMED 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_adcb3134205a6d15c137ea7362ff49970}\label{main_8c_adcb3134205a6d15c137ea7362ff49970}} 
+\index{main.c@{main.c}!custom\_delay\_ms@{custom\_delay\_ms}}
+\index{custom\_delay\_ms@{custom\_delay\_ms}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{custom\_delay\_ms()}{custom\_delay\_ms()}}
+{\footnotesize\ttfamily void custom\+\_\+delay\+\_\+ms (\begin{DoxyParamCaption}\item[{u32}]{counter }\end{DoxyParamCaption})}
+
+
+
+Introduces a delay in milliseconds. 
+
+Creates a delay by executing nested loops. The duration of the delay is approximately proportional to the {\ttfamily counter} parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em counter} & Delay duration in milliseconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function to control GPIO ports. 
+
+Initializes PORTA and PORTD as output and alternates their states in an infinite loop.
+
+\begin{DoxyReturn}{Returns}
+int Does not return a value. 
+\end{DoxyReturn}
