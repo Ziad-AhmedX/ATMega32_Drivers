@@ -10,7 +10,7 @@ SRC := ../../01-MCAL/01-DIO/DIO_program.c
 SRC += main.c
 
 #include path
-INCLUDE_PATH :=../../01-MCAL ../../03-LIB 
+INCLUDE_PATH :=../../01-MCAL/01-DIO ../../--LIB 
     
 #Program (EXC) name
 EXC_NAME = release/DIOLed.elf
