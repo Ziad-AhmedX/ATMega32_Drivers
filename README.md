@@ -1,4 +1,4 @@
---> ATMEGA32_DRIVERS
+--> ATMEGA drivers and applications built using them.
 
 If you want to download the repository, you can use the following command:
 
