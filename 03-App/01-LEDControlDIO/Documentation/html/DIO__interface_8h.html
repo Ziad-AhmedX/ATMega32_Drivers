@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LEDControlDIO: /home/z/Documents/AVR/Avr_Drivers/01-MCAL/DIO_interface.h File Reference</title>
+<title>LEDControlDIO: /home/z/Documents/AVR/repo_Avr/ATMega32_Drivers/01-MCAL/01-DIO/DIO_interface.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_f6f0614a7d71f97572a22fb0b5b058ce.html">01-MCAL</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f6f0614a7d71f97572a22fb0b5b058ce.html">01-MCAL</a></li><li class="navelem"><a class="el" href="dir_4e1760f23b686d8bbd3ea0c98af35297.html">01-DIO</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,11 +79,11 @@ $(function() {
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="DIO__interface_8h__dep__incl.png" border="0" usemap="#a_2home_2z_2Documents_2AVR_2Avr__Drivers_201-MCAL_2DIO__interface_8hdep" alt=""/></div>
-<map name="a_2home_2z_2Documents_2AVR_2Avr__Drivers_201-MCAL_2DIO__interface_8hdep" id="a_2home_2z_2Documents_2AVR_2Avr__Drivers_201-MCAL_2DIO__interface_8hdep">
-<area shape="rect" title="Interface definitions and function prototypes for the DIO (GPIO) driver." alt="" coords="22,5,205,61"/>
+<div class="center"><img src="DIO__interface_8h__dep__incl.png" border="0" usemap="#a_2home_2z_2Documents_2AVR_2repo__Avr_2ATMega32__Drivers_201-MCAL_201-DIO_2DIO__interface_8hdep" alt=""/></div>
+<map name="a_2home_2z_2Documents_2AVR_2repo__Avr_2ATMega32__Drivers_201-MCAL_201-DIO_2DIO__interface_8hdep" id="a_2home_2z_2Documents_2AVR_2repo__Avr_2ATMega32__Drivers_201-MCAL_201-DIO_2DIO__interface_8hdep">
+<area shape="rect" title="Interface definitions and function prototypes for the DIO (GPIO) driver." alt="" coords="6,5,245,61"/>
 <area shape="rect" href="main_8c.html" title="Main application file for controlling GPIO ports." alt="" coords="5,124,72,151"/>
-<area shape="rect" href="DIO__program_8c.html" title="Source file for the DIO (GPIO) driver." alt="" coords="97,109,279,165"/>
+<area shape="rect" href="DIO__program_8c.html" title="Source file for the DIO (GPIO) driver." alt="" coords="96,109,331,165"/>
 </map>
 </div>
 </div>
@@ -890,7 +890,14 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>DIO_ErrorStatus Status of the operation </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>DIO_ErrorStatus Status of the operation</dd></dl>
+<p>Toggle the value of all pins on a port.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Copy_u8PORT</td><td>Port name (DIO_PORTA, DIO_PORTB, DIO_PORTC, DIO_PORTD). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -47,18 +47,6 @@
 #define DIO_PIN7 7        /**< Pin 7 */
 
 /** 
- * @brief Port direction values
- */
-#define DIO_PORT_OUTPUT 1 /**< Port direction is OUTPUT */
-#define DIO_PORT_INPUT 0  /**< Port direction is INPUT */
-
-/** 
- * @brief Port value states
- */
-#define DIO_PORT_HIGH 1   /**< Port value is HIGH */
-#define DIO_PORT_LOW 0    /**< Port value is LOW */
-
-/** 
  * @brief Error status enumeration for DIO operations
  */
 typedef enum {
@@ -66,6 +54,21 @@ typedef enum {
     DIO_OK   /**< Operation Success */
 } DIO_ErrorStatus;
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+/** 
+ * @brief Port direction values
+ */
+#define DIO_PORT_OUTPUT 1 /**< Port direction is OUTPUT */
+#define DIO_PORT_INPUT 0  /**< Port direction is INPUT */
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+/** 
+ * @brief Port value states
+ */
+#define DIO_PORT_HIGH 1   /**< Port value is HIGH */
+#define DIO_PORT_LOW 0    /**< Port value is LOW */
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Set the direction of a specific pin
  * 
@@ -77,6 +80,7 @@ typedef enum {
  */
 DIO_ErrorStatus DIO_enumSetPinDirection(u8 copy_u8PORT, u8 copy_u8PIN, u8 copy_u8DIRECTION);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Set the value of a specific pin
  * 
@@ -88,6 +92,7 @@ DIO_ErrorStatus DIO_enumSetPinDirection(u8 copy_u8PORT, u8 copy_u8PIN, u8 copy_u
  */
 DIO_ErrorStatus DIO_enumSetPinValue(u8 copy_u8PORT, u8 copy_u8PIN, u8 copy_u8VALUE);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Get the value of a specific pin
  * 
@@ -99,6 +104,7 @@ DIO_ErrorStatus DIO_enumSetPinValue(u8 copy_u8PORT, u8 copy_u8PIN, u8 copy_u8VAL
  */
 DIO_ErrorStatus DIO_enumGetPinValue(u8 copy_u8PORT, u8 copy_u8PIN, u8 *Copy_u8PtrData);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Toggle the value of a specific pin
  * 
@@ -109,6 +115,7 @@ DIO_ErrorStatus DIO_enumGetPinValue(u8 copy_u8PORT, u8 copy_u8PIN, u8 *Copy_u8Pt
  */
 DIO_ErrorStatus DIO_enumTogglePinValue(u8 Copy_u8PORT, u8 Copy_u8PIN);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Set the direction of all pins on a port
  * 
@@ -119,6 +126,7 @@ DIO_ErrorStatus DIO_enumTogglePinValue(u8 Copy_u8PORT, u8 Copy_u8PIN);
  */
 DIO_ErrorStatus DIO_enumSetPortDirection(u8 Copy_u8PORT, u8 Copy_u8Direction);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Set the value of all pins on a port
  * 
@@ -129,6 +137,7 @@ DIO_ErrorStatus DIO_enumSetPortDirection(u8 Copy_u8PORT, u8 Copy_u8Direction);
  */
 DIO_ErrorStatus DIO_enumSetPortValue(u8 Copy_u8PORT, u8 Copy_u8Value);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Get the value of all pins on a port
  * 
@@ -139,6 +148,7 @@ DIO_ErrorStatus DIO_enumSetPortValue(u8 Copy_u8PORT, u8 Copy_u8Value);
  */
 DIO_ErrorStatus DIO_enumGetPortValue(u8 Copy_u8PORT, u8* Copy_u8PtrData);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 /** 
  * @brief Toggle the value of all pins on a port
  * 
@@ -148,5 +158,7 @@ DIO_ErrorStatus DIO_enumGetPortValue(u8 Copy_u8PORT, u8* Copy_u8PtrData);
  */
 DIO_ErrorStatus DIO_enumTogglePortValue(u8 Copy_u8PORT);
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------
 #endif /* DIO_INTERFACE_H_ */
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------

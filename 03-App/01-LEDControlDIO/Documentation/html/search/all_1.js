@@ -12,7 +12,7 @@ var searchData=
   ['dio_5fenumsetportdirection_10',['DIO_enumSetPortDirection',['../DIO__program_8c.html#ac4874848816865d32b35cc2b619e5202',1,'DIO_enumSetPortDirection(u8 Copy_u8PORT, u8 Copy_u8Direction):&#160;DIO_program.c'],['../DIO__interface_8h.html#ac4874848816865d32b35cc2b619e5202',1,'DIO_enumSetPortDirection(u8 Copy_u8PORT, u8 Copy_u8Direction):&#160;DIO_program.c']]],
   ['dio_5fenumsetportvalue_11',['DIO_enumSetPortValue',['../DIO__program_8c.html#a97344ac44737143aae39b64d85684743',1,'DIO_enumSetPortValue(u8 Copy_u8PORT, u8 Copy_u8Value):&#160;DIO_program.c'],['../DIO__interface_8h.html#a97344ac44737143aae39b64d85684743',1,'DIO_enumSetPortValue(u8 Copy_u8PORT, u8 Copy_u8Value):&#160;DIO_program.c']]],
   ['dio_5fenumtogglepinvalue_12',['DIO_enumTogglePinValue',['../DIO__program_8c.html#af00bbdd5c6f33a97f09712347d83fb9e',1,'DIO_enumTogglePinValue(u8 Copy_u8PORT, u8 Copy_u8PIN):&#160;DIO_program.c'],['../DIO__interface_8h.html#af00bbdd5c6f33a97f09712347d83fb9e',1,'DIO_enumTogglePinValue(u8 Copy_u8PORT, u8 Copy_u8PIN):&#160;DIO_program.c']]],
-  ['dio_5fenumtoggleportvalue_13',['DIO_enumTogglePortValue',['../DIO__interface_8h.html#a383730e1856c067091d39c547f48ab61',1,'DIO_interface.h']]],
+  ['dio_5fenumtoggleportvalue_13',['DIO_enumTogglePortValue',['../DIO__interface_8h.html#a383730e1856c067091d39c547f48ab61',1,'DIO_enumTogglePortValue(u8 Copy_u8PORT):&#160;DIO_program.c'],['../DIO__program_8c.html#a383730e1856c067091d39c547f48ab61',1,'DIO_enumTogglePortValue(u8 Copy_u8PORT):&#160;DIO_program.c']]],
   ['dio_5ferrorstatus_14',['DIO_ErrorStatus',['../DIO__interface_8h.html#aa1529159f40de149cb1fb4c16733468c',1,'DIO_interface.h']]],
   ['dio_5finterface_2eh_15',['DIO_interface.h',['../DIO__interface_8h.html',1,'']]],
   ['dio_5fnok_16',['DIO_NOK',['../DIO__interface_8h.html#aa1529159f40de149cb1fb4c16733468ca1459928805cd899da94d0ed0d7b34bdf',1,'DIO_interface.h']]],
@@ -38,6 +38,5 @@ var searchData=
   ['dio_5fportc_36',['DIO_PORTC',['../DIO__interface_8h.html#afd0fd698e348c4df3af5b2083d36e4b2',1,'DIO_interface.h']]],
   ['dio_5fportd_37',['DIO_PORTD',['../DIO__interface_8h.html#aa9a7a59399a2b2d2bae3053b2a8db0c5',1,'DIO_interface.h']]],
   ['dio_5fprivate_2eh_38',['DIO_private.h',['../DIO__private_8h.html',1,'']]],
-  ['dio_5fprogram_2ec_39',['DIO_program.c',['../DIO__program_8c.html',1,'']]],
-  ['dio_5fvoidtoggleportvalue_40',['DIO_voidTogglePortValue',['../DIO__program_8c.html#a1c276c49589fcce4821f34309a33aa59',1,'DIO_program.c']]]
+  ['dio_5fprogram_2ec_39',['DIO_program.c',['../DIO__program_8c.html',1,'']]]
 ];

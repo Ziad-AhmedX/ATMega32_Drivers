@@ -1,5 +1,5 @@
-\hypertarget{DIO__program_8c}{}\doxysection{/home/z/\+Documents/\+AVR/\+Avr\+\_\+\+Drivers/01-\/\+MCAL/\+DIO\+\_\+program.c File Reference}
-\label{DIO__program_8c}\index{/home/z/Documents/AVR/Avr\_Drivers/01-\/MCAL/DIO\_program.c@{/home/z/Documents/AVR/Avr\_Drivers/01-\/MCAL/DIO\_program.c}}
+\hypertarget{DIO__program_8c}{}\doxysection{/home/z/\+Documents/\+AVR/repo\+\_\+\+Avr/\+ATMega32\+\_\+\+Drivers/01-\/\+MCAL/01-\/\+DIO/\+DIO\+\_\+program.c File Reference}
+\label{DIO__program_8c}\index{/home/z/Documents/AVR/repo\_Avr/ATMega32\_Drivers/01-\/MCAL/01-\/DIO/DIO\_program.c@{/home/z/Documents/AVR/repo\_Avr/ATMega32\_Drivers/01-\/MCAL/01-\/DIO/DIO\_program.c}}
 
 
 Source file for the DIO (GPIO) driver.  
@@ -35,7 +35,7 @@ Include dependency graph for DIO\+\_\+program.\+c\+:
 \begin{DoxyCompactList}\small\item\em Sets the value of the entire port (HIGH or LOW). \end{DoxyCompactList}\item 
 \mbox{\hyperlink{DIO__interface_8h_aa1529159f40de149cb1fb4c16733468c}{DIO\+\_\+\+Error\+Status}} \mbox{\hyperlink{DIO__program_8c_a43a44692e1029188cd15a499a888f43f}{DIO\+\_\+enum\+Get\+Port\+Value}} (u8 Copy\+\_\+u8\+PORT, u8 $\ast$Copy\+\_\+u8\+Ptr\+Data)
 \begin{DoxyCompactList}\small\item\em Gets the value of the entire port. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{DIO__program_8c_a1c276c49589fcce4821f34309a33aa59}{DIO\+\_\+void\+Toggle\+Port\+Value}} (u8 Copy\+\_\+u8\+PORT)
+\mbox{\hyperlink{DIO__interface_8h_aa1529159f40de149cb1fb4c16733468c}{DIO\+\_\+\+Error\+Status}} \mbox{\hyperlink{DIO__program_8c_a383730e1856c067091d39c547f48ab61}{DIO\+\_\+enum\+Toggle\+Port\+Value}} (u8 Copy\+\_\+u8\+PORT)
 \begin{DoxyCompactList}\small\item\em Toggles the value of the entire port. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -208,15 +208,17 @@ Toggle the value of a specific pin.
 \begin{DoxyReturn}{Returns}
 DIO\+\_\+\+Error\+Status Status of the operation. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{DIO__program_8c_a1c276c49589fcce4821f34309a33aa59}\label{DIO__program_8c_a1c276c49589fcce4821f34309a33aa59}} 
-\index{DIO\_program.c@{DIO\_program.c}!DIO\_voidTogglePortValue@{DIO\_voidTogglePortValue}}
-\index{DIO\_voidTogglePortValue@{DIO\_voidTogglePortValue}!DIO\_program.c@{DIO\_program.c}}
-\doxysubsubsection{\texorpdfstring{DIO\_voidTogglePortValue()}{DIO\_voidTogglePortValue()}}
-{\footnotesize\ttfamily void DIO\+\_\+void\+Toggle\+Port\+Value (\begin{DoxyParamCaption}\item[{u8}]{Copy\+\_\+u8\+PORT }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{DIO__program_8c_a383730e1856c067091d39c547f48ab61}\label{DIO__program_8c_a383730e1856c067091d39c547f48ab61}} 
+\index{DIO\_program.c@{DIO\_program.c}!DIO\_enumTogglePortValue@{DIO\_enumTogglePortValue}}
+\index{DIO\_enumTogglePortValue@{DIO\_enumTogglePortValue}!DIO\_program.c@{DIO\_program.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_enumTogglePortValue()}{DIO\_enumTogglePortValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{DIO__interface_8h_aa1529159f40de149cb1fb4c16733468c}{DIO\+\_\+\+Error\+Status}} DIO\+\_\+enum\+Toggle\+Port\+Value (\begin{DoxyParamCaption}\item[{u8}]{Copy\+\_\+u8\+PORT }\end{DoxyParamCaption})}
 
 
 
 Toggles the value of the entire port. 
+
+Toggle the value of all pins on a port.
 
 
 \begin{DoxyParams}{Parameters}

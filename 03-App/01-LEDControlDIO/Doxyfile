@@ -864,7 +864,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  =  main.c ../../01-MCAL/DIO_program.c  ../../01-MCAL/DIO_interface.h  ../../01-MCAL/DIO_private.h ../../01-MCAL/DIO_config.h 
+INPUT                  =  main.c ../../01-MCAL/01-DIO/DIO_program.c  ../../01-MCAL/01-DIO/DIO_interface.h  ../../01-MCAL/01-DIO/DIO_private.h ../../01-MCAL/01-DIO/DIO_config.h 
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses

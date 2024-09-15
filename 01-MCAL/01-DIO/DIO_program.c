@@ -281,17 +281,24 @@ DIO_ErrorStatus DIO_enumGetPortValue(u8 Copy_u8PORT, u8* Copy_u8PtrData)
  * 
  * @param Copy_u8PORT Port name (DIO_PORTA, DIO_PORTB, DIO_PORTC, DIO_PORTD).
  */
-void DIO_voidTogglePortValue(u8 Copy_u8PORT)
+DIO_ErrorStatus DIO_enumTogglePortValue (u8 Copy_u8PORT )
 {
-	if (Copy_u8PORT <= DIO_PORTD)
+		DIO_ErrorStatus LOC_enumState = DIO_OK;
+	
+	if (Copy_u8PORT <= DIO_PORTD )
 	{
-		switch(Copy_u8PORT)
-		{
-			case DIO_PORTA: TOG_PORT(PORTA); break;
-			case DIO_PORTB: TOG_PORT(PORTB); break;
-			case DIO_PORTC: TOG_PORT(PORTC); break;
-			case DIO_PORTD: TOG_PORT(PORTD); break;
-		}
+	switch(Copy_u8PORT)
+	{
+		   case DIO_PORTA  :TOG_PORT(PORTA);break;
+		   case DIO_PORTB  :TOG_PORT(PORTB);break;
+		   case DIO_PORTC  :TOG_PORT(PORTC);break;
+		   case DIO_PORTD  :TOG_PORT(PORTD);break;
 	}
+	}
+	else 
+	{
+		LOC_enumState = DIO_NOK ;
+	}
+	return LOC_enumState;
 }
 //---------------------------------------------------------------------------------------------------------------------------------------------------
