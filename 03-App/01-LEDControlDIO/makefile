@@ -6,7 +6,7 @@ cflags_d = -O0 -g -Wall #debugging flags , d --> debug
 cflags_r = -Os -Wl,--gc-sections # release flags with garbage collection of unused sections  ,r --> release 
 
 #SRC_FILE_LIST
-SRC := ../../01-MCAL/test.c
+SRC := ../../01-MCAL/01-DIO/DIO_program.c
 SRC += main.c
 
 #include path
